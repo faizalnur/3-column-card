@@ -74,15 +74,7 @@ p{
   cursor: pointer;
 }
 @media screen and (max-width: 571px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
   .container {
     width: min-content;
-  }
-  .btn-round{
-    margin-top: 20px;
   }
 }
