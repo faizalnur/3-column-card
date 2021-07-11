@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display');
+
+:root{
+  --color-1: hsl(31, 77%, 52%);
+  --color-2: hsl(184, 100%, 22%);
+  --color-3: hsl(179, 100%, 13%);
+  --radius:0.7em;
+  font-size: 15px;
+}
+
 html, body {
   margin:0;
   padding:0;
@@ -7,11 +18,10 @@ html, body {
 .attribution {   font-family: "Lexend Deca", serif;font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 .container{
-  font-size: 15px;
+  font-size:1rem;
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow:hidden;
   height:95vh;
 }
 .box{ 
@@ -19,10 +29,10 @@ html, body {
   padding: 3em;
 }
 .box:first-child{
-  border-radius: 0.7em 0 0 0.7em;
+  border-radius: var(--radius) 0 0 var(--radius) ;
 }
 .box:last-child{
-  border-radius: 0  0.7em 0.7em 0;
+  border-radius: 0  var(--radius) var(--radius)  0;
 }
 p{
   font-family: "Lexend Deca", serif;
@@ -36,16 +46,13 @@ p{
   color: hsl(0, 0%, 95%);
 }
 .sedans{
-  --color-1: hsl(31, 77%, 52%);
   background-color: var(--color-1);
 }
 
 .suvs{
-  --color-2: hsl(184, 100%, 22%);
   background-color: var(--color-2);
 }
 .luxury{
-  --color-3: hsl(179, 100%, 13%);
   background-color: var(--color-3);
 }
 .btn-round{
@@ -78,11 +85,16 @@ p{
     height:auto;
     margin-top: 2em;
     margin-bottom: 2em;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+  }
+  .box{
+    width:100%;
   }
   .box:first-child{
-    border-radius: 0.7em 0.7em 0 0;
+    border-radius: var(--radius) var(--radius)  0 0;
   }
   .box:last-child{
-    border-radius: 0  0 0.7em 0.7em;
+    border-radius: 0  0 var(--radius)  var(--radius);
   }
 }
